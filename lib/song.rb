@@ -33,7 +33,7 @@ class Song
     binding.pry
     hash = {}
     keys.each do |key|
-      hash[key] = keys.count(key)
+      hash[key] = @@genres.count(key)
     end
     hash
   end
@@ -42,7 +42,7 @@ class Song
     keys = self.artists.sort
     hash = {}
     keys.each do |key|
-      hash[key] = keys.count(key)
+      hash[key] = @@genres.count(key)
     end
     hash
   end
