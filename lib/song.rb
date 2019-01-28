@@ -41,7 +41,7 @@ class Song
     keys = self.artists.sort
     hash = {}
     keys.each do |key|
-      hash[key] = @@genres.count(key)
+      hash[key] = @@artists.count(key)
     end
     hash
   end
