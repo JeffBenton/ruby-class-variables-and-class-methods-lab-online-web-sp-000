@@ -27,7 +27,7 @@ class Song
   end
   
   def self.genre_count
-    keys = self.genres
+    keys = self.genres.sort
     hash = {}
     keys.each do |key|
       hash[key] = keys.count(key)
@@ -36,7 +36,7 @@ class Song
   end
   
   def self.artist_count
-    keys = self.artists
+    keys = self.artists.sort
     hash = {}
     keys.each do |key|
       hash[key] = keys.count(key)
