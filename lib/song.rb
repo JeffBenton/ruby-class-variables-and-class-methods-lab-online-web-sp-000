@@ -30,7 +30,6 @@ class Song
   
   def self.genre_count
     keys = self.genres.sort
-    binding.pry
     hash = {}
     keys.each do |key|
       hash[key] = @@genres.count(key)
