@@ -42,4 +42,5 @@ class Song
       hash[key] = keys.count(key)
     end
     hash
+  end
 end
